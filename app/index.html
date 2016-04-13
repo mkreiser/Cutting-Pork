@@ -23,14 +23,16 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="header">
-      <div class="issues">Issues</div>
-      <img src="images/logo.png">
-      <div class="candidates">Candidates</div>
-    </div>
+    <div class="site-container">
+      <div class="header">
+        <div class="issues"><a>Issues</a></div>
+        <img src="images/logo.png">
+        <div class="candidates"><a>Candidates</a></div>
+      </div>
 
-    <div class="container">
-      <div ng-view=""></div>
+      <div class="container">
+        <div ng-view=""></div>
+      </div>
     </div>
 
 
@@ -62,6 +64,7 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/home.js"></script>
     <!-- endbuild -->
 </body>
 </html>

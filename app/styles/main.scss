@@ -4,6 +4,16 @@
   padding: 0;
 }
 
+a, a:hover, a:visited {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.site-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
 .header {
   height: 100px;
   text-align: center;
@@ -12,7 +22,8 @@
     display: inline-block;
     height: 100px;
     line-height: 100px;
-    width: calc(100% / 2 - 80px)
+    width: calc(100% / 2 - 80px);
+    max-width: 298.5px;
   }
 
   img {
@@ -29,3 +40,57 @@
     float: right;
   }
 }
+
+.home-container {
+  text-align: center;
+
+  h2 {
+    font-weight: 400;
+  }
+
+  .search-bar {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: -75px;
+
+    input {
+      background-color: #FFF; 
+    }
+  }
+
+  .candidate-container {
+    margin: 25px 0;
+
+    .candidate {
+      img {
+        height: 200px;
+        width: auto;
+      }
+    }
+  }
+
+  .issue-container {
+    margin: 25px 0;
+
+    .issue {
+      height: 45px;
+      line-height: 45px;
+      width: 200px;
+      margin: 10px 20px;
+      display: inline-block;
+      border: 1px solid #999; 
+    }
+  }
+}
+
+.capitol-image img {
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
