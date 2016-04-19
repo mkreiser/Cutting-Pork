@@ -168,3 +168,66 @@ a, a:hover, a:visited {
   }
 }
 
+.issue-container {
+  padding: 0 10px;
+
+  .issue-header {
+    .issue-name {
+      font-size: 36px;
+    }
+
+    .issue-description {
+      margin-top: 10px;
+      line-height: 1.25;
+    }
+  }
+
+  .issue-arguments-container {
+    margin-top: 35px;
+    overflow: auto;
+
+    .left-argument {
+      width: calc(50% - 1px);
+      float: left;
+      border-right: 1px solid #aaa;
+      overflow: auto;
+    }
+
+    .right-argument {
+      width: 50%;
+      float: right;
+      overflow: auto;
+
+      .argument-list {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .issue-candidates-container {
+    overflow: auto;
+
+    .left-candidates {
+      width: calc(50% - 1px);
+      float: left;
+      border-right: 1px solid #aaa;
+      overflow: auto;
+    }
+
+    .right-candidates {
+      width: 50%;
+      float: right;
+      overflow: auto;
+
+      .candidates-list {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .issue-reading {
+    overflow: auto;
+    margin-top: 50px;
+  }
+}
+

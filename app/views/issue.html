@@ -1,0 +1,40 @@
+<div class="issue-container">
+	<div class="issue-header">
+		<div class="issue-name">{{issue.name}}</div>
+		<div class="issue-description">{{issue.description}}</div>
+	</div>
+
+	<div class="issue-arguments-container">
+		<div class="left-argument">
+			<fieldset class="header-line"><legend>Arguments in support</legend></fieldset>
+			<div class="argument-list" ng-repeat="argument in issue.argumentsInSupport">
+				<div>{{argument}}</div>
+			</div>
+		</div>
+		<div class="right-argument">
+			<fieldset class="header-line"><legend>Arguments against</legend></fieldset>
+			<div class="argument-list" ng-repeat="argument in issue.argumentsAgainst">
+				<div>{{argument}}</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="issue-candidates-container">
+		<div class="left-candidates">
+			<fieldset class="header-line"><legend>Candidates in support</legend></fieldset>
+			<div class="candidates-list" ng-repeat="candidate in issue.candidatesInSupport">
+				<div>{{candidate}}</div>
+			</div>
+		</div>
+		<div class="right-candidates">
+			<fieldset class="header-line"><legend>Candidates against</legend></fieldset>
+			<div class="candidates-list" ng-repeat="candidate in issue.candidatesAgainst">
+				<div>{{candidate}}</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="issue-reading">
+		<fieldset class="header-line"><legend>Further Reading</legend></fieldset>
+	</div>
+</div>

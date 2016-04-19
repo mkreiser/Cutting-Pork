@@ -26,4 +26,15 @@ angular.module('cuttingPorkApp')
 		}],
 		furtherCitations: [''] //urls
 	}
+})
+.constant('ISSUES', {
+	'Immigration': {
+		name: 'Immigration',
+		description: 'Brief description',
+		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
+		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
+		candidatesInSupport: ['Bernie Sanders'], //candidates
+		candidatesAgainst: ['Donald Trump'], //candidates
+		furtherCitations: [''] //urls
+	}
 });
