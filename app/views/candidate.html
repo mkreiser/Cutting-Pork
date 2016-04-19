@@ -1,0 +1,36 @@
+<div class="candidate-page">
+	<div class="candidate-header">
+		<img class="candidate-image" src="{{candidate.image}}">
+		<div class="candidate-name">{{candidate.name}}</div>
+		<div>{{candidate.currentOffice}}</div>
+
+		<div class="candidate-bio">
+			<div>Previous offices: <span ng-repeat="office in candidate.previousOffices">{{office}}<span ng-if="!$last">, </span></span></div>
+			<div>Current Party: {{candidate.party}}</div>
+			<div>Age: {{candidate.age}}</div>
+		</div>
+		<div class="candidate-links">
+			<div><a href="{{candidate.website}}">Website<md-icon md-font-set="material-icons">call_made</md-icon></a></div>
+			<div><a href="{{candidate.facebook}}">Facebook <md-icon md-font-set="material-icons">call_made</md-icon></a></div>
+			<div><a href="{{candidate.twitter}}">Twitter<md-icon md-font-set="material-icons">call_made</md-icon></a></div>
+		</div>
+	</div>
+
+	<div class="candidate-media">
+		<fieldset class="candidate-media-header header-line"><legend>Media</legend></fieldset>
+		<span ng-repeat="m in candidate.media">
+			<img src="{{m}}">
+		</span>
+	</div>
+
+	<div class="candidate-issues">
+		<fieldset class="header-line"><legend>Issues</legend></fieldset>
+	</div>
+
+	<div class="candidate-reading">
+		<fieldset class="header-line"><legend>Further Reading</legend></fieldset>
+	</div>
+</div>
+
+
+

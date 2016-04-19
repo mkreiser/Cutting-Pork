@@ -25,7 +25,16 @@ angular
         templateUrl: 'views/home.html',
         controller: 'homeCtrl'
       })
+      .when('/candidate', {
+        templateUrl: 'views/candidate.html',
+        controller: 'candidateCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .run(function($location, $rootScope) {
+    $rootScope.goToState = function(state) {
+      $location.path(state);
+    };
   });
