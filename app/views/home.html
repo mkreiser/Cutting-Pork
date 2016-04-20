@@ -7,31 +7,28 @@
 
 	<h2>Candidates Running in Current Election</h2>
 	<div class="candidate-container">
-		<span class="candidate">
-			<a href='/#/candidate#Bernie Sanders'>
-				<img src="images/candidates/Bernie Sanders/Bernie_Sanders.jpg">
-				<div>Bernie Sanders</div>
-			</a>
+		<span class="candidate" ng-repeat="can in currentElection">
+			<a href='/#/candidate#{{can.name}}'>
+				<img src="{{can.image}}">
+				<div>{{can.name}}</div>
+			</a>		
 		</span>
 	</div>
 
 	<h2>Trending Candidates</h2>
 	<div class="candidate-container">
-		<span class="candidate">
-			<a href='/#/candidate#Bernie Sanders'>
-				<img src="images/candidates/Bernie Sanders/Bernie_Sanders.jpg">
-				<div>Bernie Sanders</div>
-			</a>
+		<span class="candidate" ng-repeat="can in trendingCandidates">
+			<a href='/#/candidate#{{can.name}}'>
+				<img src="{{can.image}}">
+				<div>{{can.name}}</div>
+			</a>		
 		</span>
 	</div>
 
 	<h2>Trending Issues</h2>
 	<div class="issue-container">
-		<span class="issue"><a href="/#/issue#Immigration">Immigration</a></span>
-		<span class="issue"><a>Supreme Court</a></span>
-		<span class="issue"><a>Abortion</a></span>
-		<span class="issue"><a>Campaign Finance</a></span>
-		<span class="issue"><a>Financial Reform</a></span>
-		<span class="issue"><a>Education</a></span>
+		<span ng-repeat="issue in trendingIssues">
+			<a href="/#/issue#{{issue}}"><span class="issue">{{issue}}</span></a>
+		</span>
 	</div>
 </div>

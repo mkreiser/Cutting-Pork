@@ -25,11 +25,79 @@ angular.module('cuttingPorkApp')
 			citations: [''] //urls
 		}],
 		furtherCitations: [''] //urls
+	},
+	'Donald Trump': {
+		name: 'Donald Trump',
+		image: 'images/candidates/Donald Trump/Donald Trump.jpg',
+		currentOffice: 'Private Citizen (Businessman)',
+		previousOffices: ['No public offices held'],
+		party: 'Republican Party',
+		age: 69,
+		website: 'https://www.donaldjtrump.com/',
+		facebook: 'https://www.facebook.com/DonaldTrump/',
+		twitter: 'https://twitter.com/realDonaldTrump',
+		media: ['images/candidates/Donald Trump/media1.jpg'], //urls
+		issues: [{
+			name: 'Abortion',
+			stance: 'Pro-Life',
+			citations: [''] //urls
+		},
+		{
+			name: 'Gun Rights',
+			stance: 'Pro Gun Rights',
+			citations: [''] //urls
+		}],
+		furtherCitations: [''] //urls
 	}
 })
 .constant('ISSUES', {
 	'Immigration': {
 		name: 'Immigration',
+		description: 'Brief description',
+		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
+		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
+		candidatesInSupport: ['Bernie Sanders'], //candidates
+		candidatesAgainst: ['Donald Trump'], //candidates
+		furtherCitations: [''] //urls
+	},
+	'Supreme Court': {
+		name: 'Supreme Court',
+		description: 'Brief description',
+		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
+		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
+		candidatesInSupport: ['Bernie Sanders'], //candidates
+		candidatesAgainst: ['Donald Trump'], //candidates
+		furtherCitations: [''] //urls
+	},
+	'Abortion': {
+		name: 'Abortion',
+		description: 'Brief description',
+		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
+		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
+		candidatesInSupport: ['Bernie Sanders'], //candidates
+		candidatesAgainst: ['Donald Trump'], //candidates
+		furtherCitations: [''] //urls
+	},
+	'Campaign Finance': {
+		name: 'Campaign Finance',
+		description: 'Brief description',
+		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
+		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
+		candidatesInSupport: ['Bernie Sanders'], //candidates
+		candidatesAgainst: ['Donald Trump'], //candidates
+		furtherCitations: [''] //urls
+	}, 
+	'Financial Reform': {
+		name: 'Financial Reform',
+		description: 'Brief description',
+		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
+		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
+		candidatesInSupport: ['Bernie Sanders'], //candidates
+		candidatesAgainst: ['Donald Trump'], //candidates
+		furtherCitations: [''] //urls
+	},
+	'Education': {
+		name: 'Education',
 		description: 'Brief description',
 		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
 		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],

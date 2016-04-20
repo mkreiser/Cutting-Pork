@@ -79,7 +79,9 @@ a, a:hover, a:visited {
     margin: 25px 0;
 
     .candidate {
+      padding: 0 10px;
       cursor: pointer;
+      display: inline-block;
       
       img {
         height: 200px;
