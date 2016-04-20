@@ -48,6 +48,52 @@ angular.module('cuttingPorkApp')
 			citations: [''] //urls
 		}],
 		furtherCitations: [''] //urls
+	}, 
+	'Hilary Clinton': {
+		name: 'Hilary Clinton',
+		image: 'images/candidates/Hilary Clinton/Hilary Clinton.jpg',
+		currentOffice: 'Private Citizen (Businessman)',
+		previousOffices: ['No public offices held'],
+		party: 'Republican Party',
+		age: 69,
+		website: 'https://www.donaldjtrump.com/',
+		facebook: 'https://www.facebook.com/DonaldTrump/',
+		twitter: 'https://twitter.com/realDonaldTrump',
+		media: ['images/candidates/Donald Trump/media1.jpg'], //urls
+		issues: [{
+			name: 'Abortion',
+			stance: 'Pro-Life',
+			citations: [''] //urls
+		},
+		{
+			name: 'Gun Rights',
+			stance: 'Pro Gun Rights',
+			citations: [''] //urls
+		}],
+		furtherCitations: [''] //urls
+	},
+	'Ted Cruz': {
+		name: 'Rafael Edward \"Ted\" Cruz',
+		image: 'images/candidates/Ted Cruz/Ted Cruz.jpg',
+		currentOffice: 'Private Citizen (Businessman)',
+		previousOffices: ['No public offices held'],
+		party: 'Republican Party',
+		age: 69,
+		website: 'https://www.donaldjtrump.com/',
+		facebook: 'https://www.facebook.com/DonaldTrump/',
+		twitter: 'https://twitter.com/realDonaldTrump',
+		media: ['images/candidates/Donald Trump/media1.jpg'], //urls
+		issues: [{
+			name: 'Abortion',
+			stance: 'Pro-Life',
+			citations: [''] //urls
+		},
+		{
+			name: 'Gun Rights',
+			stance: 'Pro Gun Rights',
+			citations: [''] //urls
+		}],
+		furtherCitations: [''] //urls
 	}
 })
 .constant('ISSUES', {
