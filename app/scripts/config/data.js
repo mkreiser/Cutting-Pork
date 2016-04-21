@@ -13,6 +13,7 @@ angular.module('cuttingPorkApp')
 		website: 'https://berniesanders.com/',
 		facebook: 'https://www.facebook.com/berniesanders/',
 		twitter: 'https://twitter.com/SenSanders',
+		wikipedia: 'https://en.wikipedia.org/wiki/Bernie_Sanders',
 		media: ['images/candidates/Bernie Sanders/media1.jpg'], //urls
 		issues: [{
 			name: 'Abortion',
@@ -36,6 +37,7 @@ angular.module('cuttingPorkApp')
 		website: 'https://www.donaldjtrump.com/',
 		facebook: 'https://www.facebook.com/DonaldTrump/',
 		twitter: 'https://twitter.com/realDonaldTrump',
+		wikipedia: 'https://en.wikipedia.org/wiki/Donald_Trump',
 		media: ['images/candidates/Donald Trump/media1.jpg'], //urls
 		issues: [{
 			name: 'Abortion',
@@ -48,7 +50,55 @@ angular.module('cuttingPorkApp')
 			citations: [''] //urls
 		}],
 		furtherCitations: [''] //urls
-	}
+	},
+	'Hillary Clinton': {
+		name: 'Hillary Clinton',
+		image: 'images/candidates/Hillary Clinton/Hillary Clinton.jpg',
+		currentOffice: 'Private Citizen',
+		previousOffices: ['U.S. Secretary of State', 'U.S. Senator from New York', 'First Lady of U.S.', 'First Lady of Arkansas'],
+		party: 'Democratic Party',
+		age: 68,
+		website: 'https://www.hillaryclinton.com/',
+		facebook: 'https://www.facebook.com/hillaryclinton/',
+		twitter: 'https://twitter.com/HillaryClinton',
+		wikipedia: 'https://en.wikipedia.org/wiki/Hillary_Clinton',
+		media: ['images/candidates/Hillary Clinton/media1.jpg'], //urls
+		issues: [{
+			name: 'Abortion',
+			stance: 'Pro-Choice',
+			citations: [''] //urls
+		},
+		{
+			name: 'Gun Rights',
+			stance: 'Pro Gun Control',
+			citations: [''] //urls
+		}],
+		furtherCitations: [''] //urls
+	},
+	'Ted Cruz': {
+		name: 'Ted Cruz',
+		image: 'images/candidates/Ted Cruz/Ted Cruz.jpg',
+		currentOffice: 'U.S. Senator from Texas',
+		previousOffices: ['Solicitor General of Texas'],
+		party: 'Republican Party',
+		age: 45,
+		website: 'https://www.tedcruz.org/',
+		facebook: 'https://www.facebook.com/tedcruzpage/',
+		twitter: 'https://twitter.com/tedcruz',
+		wikipedia: 'https://en.wikipedia.org/wiki/Ted_Cruz',
+		media: ['images/candidates/Ted Cruz/media1.jpg'], //urls
+		issues: [{
+			name: 'Abortion',
+			stance: 'Pro-Life',
+			citations: [''] //urls
+		},
+		{
+			name: 'Gun Rights',
+			stance: 'Pro Gun Rights',
+			citations: [''] //urls
+		}],
+		furtherCitations: [''] //urls
+	},
 })
 .constant('ISSUES', {
 	'Immigration': {

@@ -3,7 +3,7 @@
 angular.module('cuttingPorkApp')
 
 .controller('homeCtrl', function(CANDIDATES, $scope) {
-	var currentElectionList = ['Bernie Sanders', 'Donald Trump'];
+	var currentElectionList = ['Bernie Sanders', 'Donald Trump', 'Hillary Clinton', 'Ted Cruz'];
 	var trendingCandidatesList = ['Bernie Sanders', 'Donald Trump'];
 
 	$scope.trendingIssues = ['Immigration', 'Supreme Court', 'Abortion', 'Campaign Finance', 'Financial Reform', 'Education'];
