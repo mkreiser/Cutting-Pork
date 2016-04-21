@@ -3,7 +3,7 @@
 angular.module('cuttingPorkApp')
 
 .controller('issueCtrl', function(ISSUES, $location, $scope) {
-	if ($location.hash() == false) {
+	if ($location.hash() === false) {
 		$location.path('/');
 	}
 

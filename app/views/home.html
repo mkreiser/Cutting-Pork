@@ -7,22 +7,33 @@
 
 	<h2>Candidates Running in Current Election</h2>
 	<div class="candidate-container">
-		<span class="candidate" ng-repeat="can in currentElection">
-			<a href='#/candidate#{{can.name}}'>
+
+		<button id="prevRunning"
+				ng-click="incrementShowRunning(-1)"> < </button>
+		<span class="candidate" ng-repeat="index in currShowRunning" ng-init = "can = currentElection[index]">
+			<a href='/#/candidate#{{can.name}}'>
 				<img src="{{can.image}}">
 				<div>{{can.name}}</div>
 			</a>		
 		</span>
+
+		<button id="nextRunning"
+				ng-click="incrementShowRunning(1)"> > </button>
 	</div>
 
 	<h2>Trending Candidates</h2>
 	<div class="candidate-container">
-		<span class="candidate" ng-repeat="can in trendingCandidates">
-			<a href='#/candidate#{{can.name}}'>
+
+		<button id="prevRunning"
+				ng-click="incrementShowTrending(-1)"> < </button>
+		<span class="candidate" ng-repeat="index in currShowTrending" ng-init = "can = trendingCandidates[index]">
+			<a href='/#/candidate#{{can.name}}'>
 				<img src="{{can.image}}">
 				<div>{{can.name}}</div>
 			</a>		
 		</span>
+		<button id="nextRunning"
+				ng-click="incrementshowTrending(1)"> > </button>
 	</div>
 
 	<h2>Trending Issues</h2>
@@ -30,5 +41,10 @@
 		<span ng-repeat="issue in trendingIssues">
 			<a href="#/issue#{{issue}}"><span class="issue">{{issue}}</span></a>
 		</span>
+
+
 	</div>
 </div>
+
+<!-- 
+ng-show="{{ currShowRunning.indexOf($index) != -1}}" -->
