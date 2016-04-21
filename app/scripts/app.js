@@ -29,10 +29,18 @@ angular
         templateUrl: 'views/candidate.html',
         controller: 'candidateCtrl'
       })
+      .when('/candidatelist', {
+        templateUrl: 'views/candidateList.html',
+        controller: 'candidateCtrl'
+      })
       .when('/issue', {
         templateUrl: 'views/issue.html',
         controller: 'issueCtrl'
       })
+      .when('/issuelist', {
+        templateUrl: 'views/issueList.html',
+        controller: 'issueCtrl'
+      })      
       .otherwise({
         redirectTo: '/'
       });
