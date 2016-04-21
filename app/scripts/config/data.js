@@ -7,7 +7,7 @@ angular.module('cuttingPorkApp')
 		name: 'Bernie Sanders',
 		image: 'images/candidates/Bernie Sanders/Bernie_Sanders.jpg',
 		currentOffice: 'U.S. Senator from Vermont',
-		previousOffices: ['U.S. Representative, Vermont\'s at-large district', 'Mayor of Burlington, Vermont'],
+		previousOffices: ['U.S. Representative Vermont\'s at-large district', 'Mayor of Burlington, Vermont'],
 		party: 'Democratic Party',
 		age: 74,
 		website: 'https://berniesanders.com/',
@@ -18,14 +18,53 @@ angular.module('cuttingPorkApp')
 		issues: [{
 			name: 'Abortion',
 			stance: 'Pro-Choice',
-			citations: [''] //urls
-		},
-		{
-			name: 'Gun Rights',
-			stance: 'Pro Gun Control',
-			citations: [''] //urls
+			citations: [{
+				text: 'this is a text blob1',
+				url: ''
+			}, {
+				text: 'this is a text blob2',
+				url: ''
+			}, {
+				text: 'this is a text blob3',
+				url: ''
+			}]
+		}, {
+			name: 'Supreme Court',
+			stance: 'Hold hearing now',
+			citations: [{
+				text: 'this is a text blob1',
+				url: ''
+			}, {
+				text: 'this is a text blob2',
+				url: ''
+			}, {
+				text: 'this is a text blob3',
+				url: ''
+			}]
+		}, {
+			name: 'Education',
+			stance: 'Increase public funding',
+			citations: [{
+				text: 'this is a text blob1',
+				url: ''
+			}, {
+				text: 'this is a text blob2',
+				url: ''
+			}, {
+				text: 'this is a text blob3',
+				url: ''
+			}]
 		}],
-		furtherCitations: [''] //urls
+		furtherCitations: [{
+			text: 'Bernie Sanders is a pimp',
+			url: ''
+		}, {
+			text: 'Bernie Sanders',
+			url: ''
+		}, {
+			text: 'Feel the Bern',
+			url: ''
+		}]
 	},
 	'Donald Trump': {
 		name: 'Donald Trump',

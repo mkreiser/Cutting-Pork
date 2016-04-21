@@ -11,7 +11,7 @@
 		</div>
 		<div class="candidate-links">
 			<div><a href="{{candidate.website}}">Website<md-icon md-font-set="material-icons">call_made</md-icon></a></div>
-			<div><a href="{{candidate.facebook}}">Facebook <md-icon md-font-set="material-icons">call_made</md-icon></a></div>
+			<div><a href="{{candidate.facebook}}">Facebook<md-icon md-font-set="material-icons">call_made</md-icon></a></div>
 			<div><a href="{{candidate.twitter}}">Twitter<md-icon md-font-set="material-icons">call_made</md-icon></a></div>
 			<div><a href="{{candidate.wikipedia}}">Wikipedia<md-icon md-font-set="material-icons">call_made</md-icon></a></div>
 		</div>
@@ -26,10 +26,21 @@
 
 	<div class="candidate-issues">
 		<fieldset class="header-line"><legend>Issues</legend></fieldset>
+
+		<div class="issue" ng-repeat="i in candidate.issues">
+			<div class="issue-name">{{i.name}}</div>
+			<div class="issue-stance">{{i.stance}}</div>
+			<div class="issue-reason" ng-repeat="reason in i.citations">
+				<a href="{{reason.url}}">{{reason.text}}<md-icon md-font-set="material-icons">call_made</md-icon></a>
+			</div>
+		</div>
 	</div>
 
 	<div class="candidate-reading">
 		<fieldset class="header-line"><legend>Further Reading</legend></fieldset>
+		<div class="further-reading" ng-repeat="read in candidate.furtherCitations">
+			{{read.text}}<md-icon md-font-set="material-icons">call_made</md-icon>
+		</div>
 	</div>
 </div>
 
