@@ -7,7 +7,7 @@ angular.module('cuttingPorkApp')
 	var trendingCandidatesList = ['Bernie Sanders', 'Donald Trump'];
 
 	$scope.trendingIssues = ['Immigration', 'Supreme Court', 'Abortion', 'Campaign Finance', 'Financial Reform', 'Education'];
-
+	$scope.fullCandidates = CANDIDATES
 	$scope.currentElection = [];
 	$scope.trendingCandidates = [];
 
