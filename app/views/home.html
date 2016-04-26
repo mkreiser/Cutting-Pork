@@ -2,7 +2,7 @@
 <div class="home-container">
 	<md-input-container class="search-bar md-background">
 		<label>Search Candidates &amp; Issues</label>
-		<input ng-model="searchQuery"></input>
+		<input ng-model="searchQuery" ng-change="searchFor()"></input>
 	</md-input-container>
 
 	<h2>Candidates Running in Current Election</h2>

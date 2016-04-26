@@ -77,6 +77,20 @@ a, a:hover, a:visited {
     input {
       background-color: #FFF; 
     }
+
+    .searchResult{
+      background-color: white;
+
+      a{
+        display:block; 
+        width: 100%;
+        padding: 2px 0% 2px 0%;
+
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+      }
+    }
   }
 
   .candidate-container {
