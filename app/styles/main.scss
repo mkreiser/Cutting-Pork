@@ -96,6 +96,11 @@ a, a:hover, a:visited {
   .candidate-container {
     margin: 25px 0;
 
+    .home-nav-button {
+      position: relative;
+      top: -110px;
+    }
+
     .candidate {
       padding: 0 10px;
       cursor: pointer;

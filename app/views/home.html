@@ -8,8 +8,8 @@
 	<h2>Candidates Running in Current Election</h2>
 	<div class="candidate-container">
 
-		<button id="prevRunning"
-				ng-click="incrementShowRunning(-1)"> < </button>
+		<md-button class="home-nav-button" id="prevRunning"
+				ng-click="incrementShowRunning(-1)"> < </md-button>
 		<span class="candidate" ng-repeat="index in currShowRunning" ng-init = "can = currentElection[index]">
 			<a href='/#/candidate#{{can.name}}'>
 				<img src="{{can.image}}">
@@ -17,23 +17,23 @@
 			</a>		
 		</span>
 
-		<button id="nextRunning"
-				ng-click="incrementShowRunning(1)"> > </button>
+		<md-button class="home-nav-button" id="nextRunning"
+				ng-click="incrementShowRunning(1)"> > </md-button>
 	</div>
 
 	<h2>Trending Candidates</h2>
 	<div class="candidate-container">
 
-		<button id="prevRunning"
-				ng-click="incrementShowTrending(-1)"> < </button>
+		<md-button class="home-nav-button" id="prevRunning"
+				ng-click="incrementShowTrending(-1)"> < </md-button>
 		<span class="candidate" ng-repeat="index in currShowTrending" ng-init = "can = trendingCandidates[index]">
 			<a href='/#/candidate#{{can.name}}'>
 				<img src="{{can.image}}">
 				<div>{{can.name}}</div>
 			</a>		
 		</span>
-		<button id="nextRunning"
-				ng-click="incrementshowTrending(1)"> > </button>
+		<md-button class="home-nav-button" id="nextRunning"
+				ng-click="incrementshowTrending(1)"> > </md-button>
 	</div>
 
 	<h2>Trending Issues</h2>
