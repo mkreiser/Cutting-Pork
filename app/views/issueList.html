@@ -1,11 +1,6 @@
-<h1> List of Issues </h1>
-
-<div class="issue-container">
-	<ul>
-		<li ng-repeat="issue in trendingIssues">
-			<span >
-				<a href="#/issue#{{issue}}"><span class="issue">{{issue}}</span></a>
-			</span>
-		</li>
-	</ul>
+<div class="issue-list-container">
+	<div class="issue-list-header">Issues</div>
+	<md-list>
+		<md-list-item ng-repeat="issue in trendingIssues" ng-click="null"><a class="md-list-item-text" href="#/issue#{{issue}}">{{issue}}</a></md-list-item>
+	</md-list>
 </div>

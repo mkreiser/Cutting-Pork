@@ -44,9 +44,4 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  })
-  .run(function($location, $rootScope) {
-    $rootScope.goToState = function(state) {
-      $location.path(state);
-    };
   });
