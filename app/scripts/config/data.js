@@ -74,7 +74,7 @@ angular.module('cuttingPorkApp')
 			text: 'Bernie Sanders OnTheIssues page',
 			url: 'http://www.ontheissues.org/house/Bernie_Sanders.htm'
 		}, {
-			text: 'Bernie Sander News on FiveThirtyEight',
+			text: 'Bernie Sanders News on FiveThirtyEight',
 			url: 'http://fivethirtyeight.com/tag/bernie-sanders/'
 		}]
 	},
@@ -115,7 +115,16 @@ angular.module('cuttingPorkApp')
 				url: 'https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwir8MSmwrDMAhUHGD4KHUrhAmYQjJMBCCIwAQ&url=http%3A%2F%2Fwww.cnn.com%2F2015%2F10%2F03%2Fpolitics%2Fdonald-trump-oregon-shooting-armed-teachers%2F&usg=AFQjCNEJOzsZdfo_viC_mv43QQicIL7BBA&sig2=HzRXssyMRvZfCU8cUcWWEQ'
 			}]
 		}],
-		furtherCitations: [''] //urls
+		furtherCitations: [{
+			text: 'Donald Trump News on Politico',
+			url: 'http://www.politico.com/news/donald-trump'
+		}, {
+			text: 'Donald Trump OnTheIssues page',
+			url: 'http://www.ontheissues.org/Donald_Trump.htm'
+		}, {
+			text: 'Donald Trump News on FiveThirtyEight',
+			url: 'http://fivethirtyeight.com/tag/donald-trump/'
+		}]
 	},
 	'Hillary Clinton': {
 		name: 'Hillary Clinton',
@@ -139,7 +148,16 @@ angular.module('cuttingPorkApp')
 			stance: 'Pro Gun Control',
 			citations: [''] //urls
 		}],
-		furtherCitations: [''] //urls
+		furtherCitations: [{
+			text: 'Hillary Clinton News on Politico',
+			url: 'http://www.politico.com/news/hillary-clinton'
+		}, {
+			text: 'Hillary Clinton OnTheIssues page',
+			url: 'http://www.ontheissues.org/Hillary_Clinton.htm'
+		}, {
+			text: 'Hillary Clinton News on FiveThirtyEight',
+			url: 'http://fivethirtyeight.com/tag/hillary-clinton/'
+		}]
 	},
 	'Ted Cruz': {
 		name: 'Ted Cruz',
@@ -163,7 +181,16 @@ angular.module('cuttingPorkApp')
 			stance: 'Pro Gun Rights',
 			citations: [''] //urls
 		}],
-		furtherCitations: [''] //urls
+		furtherCitations: [{
+			text: 'Ted Cruz News on Politico',
+			url: 'http://www.politico.com/news/ted-cruz'
+		}, {
+			text: 'Ted Cruz OnTheIssues page',
+			url: 'http://www.ontheissues.org/Senate/Ted_Cruz.htm'
+		}, {
+			text: 'Ted Cruz News on FiveThirtyEight',
+			url: 'http://fivethirtyeight.com/tag/ted-cruz/'
+		}]
 	},
 })
 .constant('ISSUES', {
