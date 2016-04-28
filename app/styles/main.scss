@@ -199,6 +199,7 @@ a, a:hover, a:visited {
     .issue {
       width: 300px;
       display: inline-block;
+      vertical-align: top;
 
       .issue-name {
         font-size: 26px;
@@ -210,6 +211,7 @@ a, a:hover, a:visited {
 
       .issue-reason {
         line-height: 1.4;
+        padding-bottom:20px;
 
         .material-icons {
           font-size: 14px;
