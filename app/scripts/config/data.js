@@ -20,7 +20,7 @@ angular.module('cuttingPorkApp')
 			stance: 'Pro-Choice',
 			citations: [{
 				text: 'The decision about abortion is a decision for a woman and her doctor to make, not the government. I will not allow the right wing to deny women control over their own bodies by forcing clinics to close, extending waiting periods, or inventing other methods that create de facto abortion bans. Roe v. Wade is the law of the land and must remain so.',
-				url: ''
+				url: 'https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=bernie+sanders+on+abortion&eob=m.01_gbv//short'
 			}, {
 				text: '“We are not returning to the days of back-room abortions, when countless women died or were maimed,” Sanders wrote in a 2012 article on the Huffington Post.',
 				url: 'http://time.com/4192885/bernie-sanderss-abortion-hillary-clinton/'
@@ -68,14 +68,14 @@ angular.module('cuttingPorkApp')
 			}]
 		}],
 		furtherCitations: [{
-			text: 'Bernie Sanders is a pimp',
-			url: ''
+			text: 'Bernie Sanders News on Politico',
+			url: 'http://www.politico.com/news/bernie-sanders'
 		}, {
-			text: 'Bernie Sanders',
-			url: ''
+			text: 'Bernie Sanders OnTheIssues page',
+			url: 'http://www.ontheissues.org/house/Bernie_Sanders.htm'
 		}, {
-			text: 'Feel the Bern',
-			url: ''
+			text: 'Bernie Sander News on FiveThirtyEight',
+			url: 'http://fivethirtyeight.com/tag/bernie-sanders/'
 		}]
 	},
 	'Donald Trump': {

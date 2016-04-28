@@ -22,15 +22,23 @@
 	<div class="issue-candidates-container">
 		<div class="left-candidates">
 			<fieldset class="header-line"><legend>Candidates in support</legend></fieldset>
-			<div class="candidates-list" ng-repeat="candidate in issue.candidatesInSupport">
-				<div>{{candidate}}</div>
-			</div>
+			<md-list class="candidate-list">
+				<a ng-repeat="candidate in issue.candidatesInSupport" href='#/candidate#{{candidate}}'>
+					<md-list-item ng-click="null">
+						{{candidate}}
+					</md-list-item>
+				</a>
+			</md-list>
 		</div>
 		<div class="right-candidates">
 			<fieldset class="header-line"><legend>Candidates against</legend></fieldset>
-			<div class="candidates-list" ng-repeat="candidate in issue.candidatesAgainst">
-				<div>{{candidate}}</div>
-			</div>
+			<md-list class="candidate-list">
+				<a ng-repeat="candidate in issue.candidatesAgainst" href='#/candidate#{{candidate}}'>
+					<md-list-item ng-click="null">
+						{{candidate}}
+					</md-list-item>
+				</a>
+			</md-list>
 		</div>
 	</div>
 
