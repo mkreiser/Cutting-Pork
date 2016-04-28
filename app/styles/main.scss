@@ -192,6 +192,8 @@ a, a:hover, a:visited {
   }
 
   .candidate-issues {
+    text-align: center;
+
     .header-line {
       margin: 15px 0;
     }
@@ -200,6 +202,8 @@ a, a:hover, a:visited {
       width: 300px;
       display: inline-block;
       vertical-align: top;
+      margin-right: 20px;
+      text-align: left;
 
       .issue-name {
         font-size: 26px;
@@ -211,7 +215,7 @@ a, a:hover, a:visited {
 
       .issue-reason {
         line-height: 1.4;
-        padding-bottom:20px;
+        padding-bottom: 20px;
 
         .material-icons {
           font-size: 14px;
