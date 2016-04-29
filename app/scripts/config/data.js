@@ -1,4 +1,4 @@
-'use strict';
+﻿'use strict';
 
 angular.module('cuttingPorkApp')
 
@@ -195,45 +195,45 @@ angular.module('cuttingPorkApp')
 })
 .constant('ISSUES', {
 	'Immigration': {
-		name: 'Immigration',
-		description: 'Brief description',
-		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
-		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
+		name: 'Illegal Immigration',
+		description: 'This issue refers to the population of undocumented immigrants currently living in or attempting to enter the United States and the actions we should take against them. Most notabley, whether or not we should deport them or give them amnesty and citizenship. This issue grows complicated when dealing with immigrants who either came to the country as children or were born from parents occupying the country illegaly.',
+		argumentsInSupport: ['Immigration is good for the economy.', 'It would cost the United States a large sum of money to deport all 11 million estimated undocumented immigrants.', 'Immigration is a natural right provided to everyone through our humanity.'],
+		argumentsAgainst: ['It will cost the U.S. an estimated $6.3 trillion to give amnesty to all current illegal immigrants.*', 'It is unfair to both the working class paying to live in the U.S. (taxes) as well as those who attempt to immigrate legally.', 'A country has a right to its borders and to decide how people can enter and exit the country.'],
 		candidatesInSupport: ['Bernie Sanders'], //candidates
 		candidatesAgainst: ['Donald Trump'], //candidates
-		furtherCitations: [''] //urls
+		furtherCitations: ['http://www.heritage.org/research/reports/2013/05/the-fiscal-cost-of-unlawful-immigrants-and-amnesty-to-the-us-taxpayer'] //urls
 	},
 	'Supreme Court': {
-		name: 'Supreme Court',
-		description: 'Brief description',
-		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
-		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
+		name: 'Obama's Supreme Court Nomination of Merrick Garland',
+		description: 'The very republican Supreme Court Justice Antonin Scalia died leaving President Obama to nominate somebody to take his place. However, the republican controlled senate has stated that they will not endorse this nomination and have made all efforts to block the nomination.',
+		argumentsInSupport: ['Obama is constitutionaly required to make a nomination', 'The republicans are merely trying to prevent a Democratically controlled Supreme Court, not give the people a voice.', 'Obama gave the senate the courtesy of reviewing his nomination, if senate does nothing, he can appoint Garland without the consent of the Senate.'],
+		argumentsAgainst: ['President Obama made this nomination to politicize it for the purposes of the election.', 'Let the american people decide, it's an election year, the duty should be on the next elected president.'],
 		candidatesInSupport: ['Bernie Sanders'], //candidates
-		candidatesAgainst: ['Donald Trump'], //candidates
+		candidatesAgainst: ['Donald Trump','Mitch McConnel'], //candidates
 		furtherCitations: [''] //urls
 	},
 	'Abortion': {
-		name: 'Abortion',
-		description: 'Brief description',
-		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
-		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
+		name: 'Abortion: Pro-life or Pro-Choice.',
+		description: 'The distinction in the title is important because neither sides of the argument want to see abortion happen if it can be avoided. The dispute is between wether a female can have an abortion at all. People who claim Pro-Life generally believe that abortion should be illegal and those who identify as Pro-Choice defend that a women should be allowed to decide what happens to her body. This argument becomes cloudy when addressing certain scenarios like pregnancy due to rape. In support means that someone is Pro-Choice and favors legal abortion and Against means that they believe laws should prevent abortion.',
+		argumentsInSupport: ['Making abortion illegal only makes them less safe, not less frequent.', 'Religious ideology is no foundation for any law.', 'Most people who are against abortion will never become pregnant themselves.' , 'It is just a blob of tissue, fully dependent on the mother, unlike born human beings.'],
+		argumentsAgainst: ['Women experiencing an unplanned pregnancy should be given the support she needs to carry the baby to term, not left to fend for herself and seeing abortion as an easy solution.', 'Life is not an abstract argument; undisputed science, from a host of sources*, states that life begins at conception.', 'Pro-Life laws actually improve womens health by holding abortion clinics to higher standards.'],
 		candidatesInSupport: ['Bernie Sanders'], //candidates
 		candidatesAgainst: ['Donald Trump'], //candidates
-		furtherCitations: [''] //urls
+		furtherCitations: ['http://liveactionnews.org/four-non-religious-reasons-to-be-pro-life/' , 'https://www.princeton.edu/~prolife/articles/embryoquotes2.html', 'http://amplifyyourvoice.org/u/pheo152/2009/01/26/10-arguments-in-favor-of-prochoice-policy/'] //urls
 	},
 	'Campaign Finance': {
 		name: 'Campaign Finance',
-		description: 'Brief description',
-		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
-		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
+		description: 'The issue of campaign finance focuses primarily on the rising costs of running for election and the increasing reliance on the private sector to fund campaigns.',
+		argumentsInSupport: ['All 50 states mandate that candidates for elective office report the contributions they receive and the expenditures they make while pursuing public office.', 'There is a limit to how much money and individual person, group, or coorporation can donate to a campaign.' , 'If we make raising money more difficult, we make it much harder to remove incumbents from their seats since they can use their office to pay for their campaign on taxpayer dime via constituent outreach.'],
+		argumentsAgainst: ['Relying on the private sector to pay for a campaign puts pressure on a politician to act a certain way, favoring their supporters personal interest if elected.', 'Super-PACS are a loophole to get around contribution limits from individuals and coorporations.'],
 		candidatesInSupport: ['Bernie Sanders'], //candidates
 		candidatesAgainst: ['Donald Trump'], //candidates
 		furtherCitations: [''] //urls
 	}, 
 	'Financial Reform': {
 		name: 'Financial Reform',
-		description: 'Brief description',
-		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
+		description: 'This issue refers to the reform of the financial industry and the regulation of the financial industry, for example the recent $700 billion bail out of big banks.',
+		argumentsInSupport: ['Corporate corruption and greed are widening the gap between the rich and the poor.', 'Too-Big-To-Fail institutions proceeded to get larger after the $700 billion bail out and have made no changes to fix the problems that caused the bail out in the first place', 'BLAH3'],
 		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
 		candidatesInSupport: ['Bernie Sanders'], //candidates
 		candidatesAgainst: ['Donald Trump'], //candidates
@@ -241,9 +241,9 @@ angular.module('cuttingPorkApp')
 	},
 	'Education': {
 		name: 'Education',
-		description: 'Brief description',
-		argumentsInSupport: ['BLAH1', 'BLAH2', 'BLAH3'],
-		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
+		description: 'Education is important in the early ages of a childs life and provides the key to unlock potential in life. Public schools in the U.S. leave a lot to be desired and many people argue that the whole system needs to be changed.',
+		argumentsInSupport: ['All students deserve the opportunity to receive an affordable, quality education from the earliest stages of schooling to high-level degrees.', 'Many schools are overcrowded, leading to a lower quality of education', 'Teachers have tenure making it extremely difficult to fire them, even if they are terrible at what they do and are more of a detriment to the kids than a helpful presence.'],
+		argumentsAgainst: ['The National Assessment of Educational Progress scores have been higher than ever before.', 'The public school dropout rate is the lowest it has been in years.', 'Teach for America recruits do worse than credentialed union teachers with tenure.'],
 		candidatesInSupport: ['Bernie Sanders'], //candidates
 		candidatesAgainst: ['Donald Trump'], //candidates
 		furtherCitations: [''] //urls
