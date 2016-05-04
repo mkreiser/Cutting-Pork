@@ -1,6 +1,8 @@
 <div class="issue-list-container">
 	<div class="issue-list-header">Candidates</div>
 	<md-list>
-		<md-list-item ng-repeat="candidate in fullCandidates" ng-click="null"><a class="md-list-item-text" href="#/candidate#{{candidate.name}}">{{candidate.name}}</a></md-list-item>
+		<a ng-repeat="candidate in fullCandidates" ng-click="null" href="#/candidate#{{candidate.name}}">
+			<md-list-item>{{candidate.name}}</md-list-item>
+		</a>
 	</md-list>
 </div>

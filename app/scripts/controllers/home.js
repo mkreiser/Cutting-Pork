@@ -7,7 +7,7 @@ angular.module('cuttingPorkApp')
 	var trendingCandidatesList = ['Bernie Sanders', 'Donald Trump'];
 
 	$scope.trendingIssues = ['Immigration', 'Supreme Court', 'Abortion', 'Campaign Finance', 'Financial Reform', 'Education'];
-	$scope.fullCandidates = CANDIDATES
+	$scope.fullCandidates = CANDIDATES;
 	$scope.currentElection = [];
 	$scope.trendingCandidates = [];
 
@@ -68,17 +68,18 @@ angular.module('cuttingPorkApp')
 		while (prevResults.length){
 			dest.removeChild(prevResults[0]);		/**Clear out previous results**/
 		}
-		if (!$scope.searchQuery)
+		if (!$scope.searchQuery) {
 			return;
+		}
 
-		var candidates 		= Object.keys(CANDIDATES)
+		var candidates 		= Object.keys(CANDIDATES);
 		var issues 			= Object.keys(ISSUES);
 		var candidMatches 	= findMatches($scope.searchQuery, candidates); 
 		var issueMatches 	= findMatches($scope.searchQuery, issues);
-		var totalResults 	= {"candidate":candidMatches, "issue":issueMatches}
+		var totalResults 	= {"candidate":candidMatches, "issue":issueMatches};
 
 		showSearchResults(dest, totalResults);
-	}
+	};
 
 	/**
 	 * Goes through the pool to see if anything contains que
@@ -90,8 +91,9 @@ angular.module('cuttingPorkApp')
 		var matches = []; 
 		for (var i = 0; i < pool.length; i++){
 			var curr = pool[i]; 
-			if (curr.toLowerCase().indexOf (que.toLowerCase()) !== -1)
-				matches.push(curr)
+			if (curr.toLowerCase().indexOf (que.toLowerCase()) !== -1){
+				matches.push(curr);
+			}
 		}
 		return matches;
 	}
@@ -105,13 +107,13 @@ angular.module('cuttingPorkApp')
 	function showSearchResults (dest, results){
 		for (var category in results){
 			for(var i = 0; i < results[category].length; i++){
-				var match 			= results[category][i]
+				var match 			= results[category][i];
 				var resultDiv 		= document.createElement("div");
 				var resultElem 		= document.createElement("a");
 				resultDiv.appendChild(resultElem);
-				resultDiv.className = "searchResult"
-				resultElem.href		= "#/" + category +"#" + match
-				resultElem.innerHTML = "<small>" + category +  "</small> <b>"+ match +"</b>"
+				resultDiv.className = "searchResult";
+				resultElem.href		= "#/" + category +"#" + match;
+				resultElem.innerHTML = "<small>" + category +  "</small> <b>"+ match +"</b>";
 
 				dest.appendChild(resultDiv);
 			}
