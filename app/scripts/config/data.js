@@ -204,10 +204,10 @@ angular.module('cuttingPorkApp')
 		furtherCitations: ['http://www.heritage.org/research/reports/2013/05/the-fiscal-cost-of-unlawful-immigrants-and-amnesty-to-the-us-taxpayer'] //urls
 	},
 	'Supreme Court': {
-		name: 'Obama's Supreme Court Nomination of Merrick Garland',
+		name: 'Obama\'s Supreme Court Nomination of Merrick Garland',
 		description: 'The very republican Supreme Court Justice Antonin Scalia died leaving President Obama to nominate somebody to take his place. However, the republican controlled senate has stated that they will not endorse this nomination and have made all efforts to block the nomination.',
 		argumentsInSupport: ['Obama is constitutionaly required to make a nomination', 'The republicans are merely trying to prevent a Democratically controlled Supreme Court, not give the people a voice.', 'Obama gave the senate the courtesy of reviewing his nomination, if senate does nothing, he can appoint Garland without the consent of the Senate.'],
-		argumentsAgainst: ['President Obama made this nomination to politicize it for the purposes of the election.', 'Let the american people decide, it's an election year, the duty should be on the next elected president.'],
+		argumentsAgainst: ['President Obama made this nomination to politicize it for the purposes of the election.', 'Let the american people decide, it\'s an election year, the duty should be on the next elected president.'],
 		candidatesInSupport: ['Bernie Sanders'], //candidates
 		candidatesAgainst: ['Donald Trump','Mitch McConnel'], //candidates
 		furtherCitations: [''] //urls
@@ -234,7 +234,7 @@ angular.module('cuttingPorkApp')
 		name: 'Financial Reform',
 		description: 'This issue refers to the reform of the financial industry and the regulation of the financial industry, for example the recent $700 billion bail out of big banks.',
 		argumentsInSupport: ['Corporate corruption and greed are widening the gap between the rich and the poor.', 'Too-Big-To-Fail institutions proceeded to get larger after the $700 billion bail out and have made no changes to fix the problems that caused the bail out in the first place', 'BLAH3'],
-		argumentsAgainst: ['NAH1', 'NAH2', 'NAH3'],
+		argumentsAgainst: ['Regulation burdens the economy', 'The economy should be a free market with no government interference'],
 		candidatesInSupport: ['Bernie Sanders'], //candidates
 		candidatesAgainst: ['Donald Trump'], //candidates
 		furtherCitations: [''] //urls
