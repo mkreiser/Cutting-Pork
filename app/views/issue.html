@@ -11,6 +11,12 @@
 				<div>{{argument}}</div>
 			</div>
 		</div>
+		<div class="middle-argument">
+			<fieldset class="header-line"><legend>Arguments in the middle</legend></fieldset>
+			<div class="argument-list" ng-repeat="argument in issue.argumentsMiddle">
+				<div>{{argument}}</div>
+			</div>
+		</div>
 		<div class="right-argument">
 			<fieldset class="header-line"><legend>Arguments against</legend></fieldset>
 			<div class="argument-list" ng-repeat="argument in issue.argumentsAgainst">

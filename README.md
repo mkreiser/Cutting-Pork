@@ -1,4 +1,4 @@
-# Cutting Pork
+# [Cutting Pork](https://mikekreiser.me/cutting-pork)
 
 This is a CS 465 UI Design group project at the University of Illinois authored by June You, Junze He, Mike Kreiser, and Robby Glahe. 
 

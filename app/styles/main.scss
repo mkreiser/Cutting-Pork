@@ -264,20 +264,18 @@ a, a:hover, a:visited {
   }
 
   .issue-arguments-container {
-    margin-top: 35px;
-    overflow: auto;
+    margin: 35px 0;
 
     .left-argument {
-      width: calc(50% - 1px);
-      float: left;
-      border-right: 1px solid #aaa;
-      overflow: auto;
+      width: 33%;
+      display: inline-block;
+      vertical-align: top;
     }
 
-    .right-argument {
-      width: 50%;
-      float: right;
-      overflow: auto;
+    .middle-argument, .right-argument {
+      width: 33%;
+      display: inline-block;
+      vertical-align: top;
 
       .argument-list {
         padding-left: 10px;
@@ -291,12 +289,11 @@ a, a:hover, a:visited {
     .left-candidates {
       width: calc(50% - 1px);
       float: left;
-      border-right: 1px solid #aaa;
       overflow: auto;
     }
 
     .right-candidates {
-      width: 50%;
+      width: calc(50% - 1px);
       float: right;
       overflow: auto;
 
